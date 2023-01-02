@@ -4,4 +4,6 @@ Please feel free to use these coding solutions for your tasks and, if possible, 
 
 It will be greatly appreciated.
 
-A big thanks to Youtube Channel "Neetcode", from where I have watched many of these solution and I have also followed his Leetcode roadmap while solving the problems.
+A big thanks to Youtube Channel "NeetCode", from where I have watched many of these solution and I have also followed his Leetcode roadmap while solving the problems.
+
+Link of this amazing channel is given below: https://www.youtube.com/@NeetCode
