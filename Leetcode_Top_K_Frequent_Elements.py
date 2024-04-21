@@ -26,3 +26,18 @@ class Solution:
         k_most_frequent = [item[0] for item in items[:k]]
 
         return k_most_frequent
+
+
+### 2nd Way ###
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        sortedMap = defaultdict(int)
+
+        for n in nums:
+            sortedMap[n] += 1
+        
+        # Sort the dictionary based on values in descending order
+        sorted_nums = sorted(sortedMap.items(), key=lambda x: x[1], reverse=True)
+
+        return [key for key, _ in sorted_nums[:k]]
