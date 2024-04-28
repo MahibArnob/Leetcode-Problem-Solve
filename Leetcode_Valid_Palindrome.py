@@ -9,3 +9,23 @@ class Solution:
             return True
         else:
             return False
+
+
+### 2nd Approach: 2 Pointers ###
+
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        if len(s) == 0:
+            return True
+
+        s = ''.join(e.lower() for e in s if e.isalnum())
+
+        left, right = 0, len(s) - 1
+
+        while left < right:
+            if s[left] != s[right]:
+                return False
+            left += 1
+            right -= 1
+        
+        return True
