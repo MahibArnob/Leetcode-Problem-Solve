@@ -16,6 +16,8 @@ class Solution:
                     left += 1
                 else:
                     output.append([a, nums[left], nums[right]])
+                    # Updating left, checking if list contain 
+                    # duplicate value, If so, then upadte again
                     left += 1
                     while nums[left] == nums[left - 1] and left < right:
                         left += 1
